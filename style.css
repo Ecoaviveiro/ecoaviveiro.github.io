@@ -1,0 +1,327 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 200px;
+}
+
+/* Filter Section: Filters and Search */
+
+.logo-header-img {
+  width: 150px;
+  height: 150px;
+}
+
+.search-bar {
+  margin: 20px 0;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  padding: 0 20px 0 30px;
+  align-items: center;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+  border-radius: 10px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #70c0a5;
+  transition: background-color 0.5s ease;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  width: 60vw;
+  background-color: #f0f0f0; /* Optional: Change to the background color of your site */
+  z-index: 1000; /* Ensures it stays above other elements */
+  padding: 0 20vw 0 20vw; /* Adjust as necessary */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+}
+
+.filters-itens {
+  max-width: 20vw;
+  padding: 20px 0;
+  display: flex;
+  gap: 20px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.filter-item label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filters select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Auto Complete */
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #fff;
+}
+
+.plant-card {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/* First Section: Images */
+
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.left-imgs {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.left-imgs img:first-child {
+  grid-row: 1 / span 2;
+  width: 100%;
+  max-width: 282.5px;
+  max-height: 282.5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.left-imgs img:last-child {
+  width: 100%;
+  max-width: 282.5px;
+  max-height: 282.5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.right-imgs {
+  display: grid;
+  align-content: space-between;
+  gap: 10px;
+}
+
+.right-imgs img {
+  width: 100%;
+  max-width: 282.5px;
+  max-height: 502.207px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-imgs img:last-child {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Second Section: Table Information */
+.info-table {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #feebd4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.info-table div {
+  text-align: center;
+}
+.info-table div h3 {
+  font-size: 18px;
+  color: #2c6f54;
+}
+.info-table div p {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+/* Third Section: Logo, Name and Background Info */
+.logo-section {
+  margin: 0 0 10px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e0f4e9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-section .info {
+  flex: 1;
+}
+.logo-section img {
+  max-width: 150px;
+}
+.logo-section .info h2 {
+  font-size: 28px;
+  color: #2c6f54;
+}
+.logo-section .info p {
+  font-size: 18px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .logo-header-img {
+    max-width: 75px;
+    max-height: 75px;
+  }
+
+  .filters {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 0 20px;
+    font-size: 12px;
+  }
+
+  .filters select {
+    padding: 5px;
+  }
+
+  .filter-item {
+    align-items: center;
+  }
+
+  .filters-itens {
+    max-width: 100vw;
+    padding: 0;
+  }
+
+  .search-bar {
+    margin: 0 0 20px;
+    width: 80%;
+    padding: 0px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .search-button {
+    font-size: 14px;
+    height: 25px;
+  }
+
+  .container {
+    margin-top: 20%;
+    grid-template-columns: 1fr; /* Exibir uma coluna por linha */
+  }
+
+  .plant-card {
+    max-width: 85vw;
+  }
+
+  .info-table {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo-section {
+    flex-direction: column-reverse;
+    padding: 5px;
+  }
+
+  .logo-section .info h2 {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .logo-section .info p {
+    font-size: 14px;
+  }
+
+  .info-table div h3 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .info-table div p {
+    font-size: 12px;
+  }
+
+  .info-table {
+    gap: 5px;
+  }
+
+  .logo-section img {
+    max-width: 0px;
+  }
+}
