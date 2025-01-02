@@ -1548,6 +1548,24 @@
     "disponiblidade": "Disponível"
   },
   {
+    "id": 5016,
+    "completo": true,
+    "categoria": "Árvores",
+    "nomepopular": "Hibisco Crespo Pendente",
+    "genero": "Hibiscus ",
+    "especie": "schizopetalus",
+    "origem": "Exótica",
+    "nacionalidade": "Sudeste Africano",
+    "porteadultoemcm": 3000,
+    "tempodecrescimento": "Médio",
+    "caracteristica": "Atrai beija flor",
+    "espacamentosugeridoquantidade": 3,
+    "espacamentosugeridounidadedemedida": "m²",
+    "pote": "Saco 9L",
+    "insolacao": "Sol Pleno",
+    "disponiblidade": "Disponível"
+  },
+  {
     "id": 6001,
     "completo": false,
     "categoria": "Bromélias",
